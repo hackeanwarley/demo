@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Gateway Hospital Management System</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/summernote.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="css/scroll.css">
+		<script type="text/javascript" src = "js/respond.js"></script>
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div class="row">
+				<nav class = "navbar navbar-inverse">
+					<a href = "#"class="navbar-brand"><img  src="img/3.png" ></a>
+					<div class="navbar-header">
+						<button id = "navbar-toggle" class = "navbar-toggle" data-target=".collapse" data-toggle="collapse" type = "button">
+							<span class = "sr-only">Toggle Navigation</span>
+							<span class = "glyphicon glyphicon-arrow-down">MENU</span>
+						</button>
+					</div>
+					<div  class="collapse navbar-collapse">
+						<ul class="nav navbar-nav pull-left">
+							<li><a href = "#"><span class = "glyphicon glyphicon-home"></span></a></li>
+							<li><a href = "#">Patients</a></li>
+							<li class="dropdown"><a href = "#" class = "dropdown-toggle" data-toggle="dropdown">Hospital <strong class = "caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href = "#">Admissions</a></li>
+									<li class="dropdown-item"><a href = "#">Appointments</a></li>
+									<li class="dropdown-item"><a href = "#">Beds</a></li>
+									<li class="dropdown-item"><a href = "#">Inventories</a></li>
+									<li class="dropdown-item"><a href = "#">Ward</a></li>
+								</ul>
+							</li>
+							<li><a href = "#">Labs</a></li>
+							<li><a href = "#">Pharmacy</a></li>
+							<li><a href = "#">Financial</a></li>
+							<li><a href = "#">HMOs</a></li>
+						</ul>
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Berachah Adjushi <strong class = "caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#"><span class="glyphicon glyphicon-file"></span> My Account</a></li>
+									<li class="dropdown-item"><a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-wrench"></span> Configuration <strong class = "caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#"><span class="glyphicon glyphicon-user"></span> User Accounts</a></li>
+								</ul>
+							</li>
+							<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-hand-down"></span> Help <strong class = "caret"></strong></a>
+								<ul class="dropdown-menu">
+									<li class="dropdown-item"><a href="#">Documentation</a></li>
+									<li class="dropdown-item"><a href="#">Knowledge base</a></li>
+									<li class="dropdown-item"><a href="#">Faqs</a></li>
+									<li class="dropdown-item"><a href="#">Support</a></li>
+									<li class="dropdown-item"><a href="#">New Features</a></li>
+									<li class="dropdown-item"><a href="#">Feature request</a></li>
+									<li class="dropdown-item"><a href="#">Tips</a></li>
+									<li class="dropdown-item"><a href="#">About HDI</a></li>
+								</ul>
+							</li>
+						</ul> 
+
+					</div>
+				</nav>
+			</div>
+
+			<article class="row">
+				<section class="col-xs-12 col-sm-9 col-lg-10" id = "main">
+					<div class = "row" >
+						<button class="btn btn-default pull-right sidebar-toggle visible-xs"><span class = "glyphicon glyphicon-list"></span></button>
+						<ul class="nav-tabs nav">
+							<li><a href="#patients" data-toggle="tab">Patients</a></li>
+							<li><a href = "#home" data-toggle="tab"><span class="glyphicon glyphicon-home"></span></a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane fade active in" id = "patients">
+								<aside class = "hidden-xs col-sm-3 col-lg-2">
+									<div class="panel panel-default">
+										<div class="panel-heading" style="cursor:pointer">
+											<h4 class="panel-title">Patient Pane</h4>
+										</div>
+										<ul class="list-group">
+											<li class="list-group-item">Patient Info</li>
+											<li class="list-group-item">Admissions</li>
+											<li class="list-group-item">Drug History</li>
+											<li class="list-group-item">Consultation</li>
+											<li class="list-group-item">Complaints</li>
+											<li class="list-group-item">Observations</li>
+											<li class="list-group-item">Diagnosis</li>
+											<li class="list-group-item">Plans/Procedures</li>
+											<li class="list-group-item">Notes</li>
+											<li class="list-group-item">Prescriptions</li>
+											<li class="list-group-item">History</li>
+											<li class="list-group-item">Vital Signs</li>
+											<li class="list-group-item">Visits</li>
+											<li class="list-group-item">Charges</li>
+											<li class="list-group-item">Bills</li>
+											<li class="list-group-item">Payments</li>
+											<li class="list-group-item">Referals</li>
+
+										</ul>
+									</div>
+								</aside>
+								<article class="col-xs-12 col-sm-9 col-lg-10">
+									<div class="row well" id = "mini-navigation">
+										<div class="col-xs-4 col-md-8 pull-left">
+											<div class="btn-group">
+												<button class="btn btn-default visible-xs  sidebar-toggle"><span class = " glyphicon glyphicon-list"></span></button>
+												<button  class="btn btn-default dropdown-toggle" data-toggle = "dropdown">+</button>
+												<ul class="dropdown-menu">
+	    											<li><a href="#">Patient</a></li>
+	    											<li><a href="#">Group Card</a></li>
+	    											<li><a href="#">Review</a></li>
+				    							</ul>
+				    						</div>
+										</div>
+										<div class="col-xs-8  col-md-4 col-lg-4" id = "search">
+											<form class="form-inline">
+		  										<div class="form-group">
+		    										<div class="input-group pull-right">
+		      											<input type="text" class="form-control">
+		      											<span class = "input-group-btn" >
+			    									 		<button type="submit" class="btn btn-default" ><span class = "glyphicon glyphicon-search"></span> </button>
+			    										</span>
+		    										</div>
+		  										</div>
+											</form>
+										</div>
+									</div>
+									<div id = "report" class="panel-group row" style="margin:1em;max-height:420px;overflow-y:scroll">
+										<div class = "panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">Complaints</h4>
+											</div>
+											<div class="panel-body">
+												<textarea class="patient-note"></textarea>
+											</div>
+										</div>
+										<div class = "panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">Observations</h4>
+											</div>
+											<div class="panel-body">
+												<textarea class="patient-note"></textarea>
+											</div>
+										</div>
+										<div class = "panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">Diagnosis</h4>
+											</div>
+											<div class="panel-body">
+												<textarea class="patient-note"></textarea>
+											</div>
+										</div>
+										<div class = "panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">Plans/Procedure</h4>
+											</div>
+											<div class="panel-body">
+												<textarea class="patient-note"></textarea>
+											</div>
+										</div>
+										<div class = "panel panel-default">
+											<div class="panel-heading">
+												<h4 class="panel-title">Note</h4>
+											</div>
+											<div class="panel-body">
+												<textarea class="patient-note"></textarea>
+											</div>
+										</div>
+									</div>
+									<button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-save"></span> Save</button>
+								</article>
+							</div>
+							<div class="tab-pane fade" id = "home">
+								kakfojfisjoifji
+							</div>
+						</div>
+					</div>		
+				</section>
+				<aside class = "col-xs-6 col-sm-3 col-lg-2 hidden-xs">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title"><span class = "glyphicon glyphicon-globe"></span> Queue</h4>
+						</div>
+						<div class="panel-inner">
+							<div class="panel-heading gradient inner-heading">
+								<p>Doctors <span class = "badge">5</span></p>
+							</div>
+							<ul class="list-group gradient">
+								<li class="list-group-item" ><a href="#" data-toggle="tooltip" title="Toyin Adekunle"><span class="glyphicon glyphicon-user"></span> Toyin Adekunle</a></li>
+								<li class="list-group-item" ><a href="#" data-toggle="tooltip" title="Ajayi Ade"><span class="glyphicon glyphicon-user"></span> Ajayi Ade</a></li>
+								<li class="list-group-item" ><a href="#" data-toggle="tooltip" title="Olujimi Fashina"><span class="glyphicon glyphicon-user"></span> Olujimi Fashina</a></li>
+								<li class="list-group-item"><a href="#"  data-toggle="tooltip" title="Ganiyu Adenle"><span class="glyphicon glyphicon-user"></span> Ganiyu Adenle</a></li>
+								<li class="list-group-item"><a href="#"  data-toggle="tooltip" title="Adjushi Beracah"><span class="glyphicon glyphicon-user"></span> Adjushi Berachah</a></li>
+							</ul>
+						</div>
+					</div>
+			</article>
+
+			<footer class = "row">
+				<p class="pull-left"> @copy 2013, All Rights Reserved. <span style = "color:blue">Privacy Policy | Terms of Use</span> </p>
+				<button class="btn btn-default pull-right" id = "feedback">Feedback</button>
+			</footer>
+		</div>
+
+	<!-- This is the javascript file -->
+		<script type="text/javascript" src = "js/jquery.js"></script>
+		<script type="text/javascript" src = "js/bootstrap.min.js"></script>
+		<script type="text/javascript" src = "js/summernote.js"></script>
+		<script type="text/javascript" src = "js/base.js"></script>
+	</body>
+</html>

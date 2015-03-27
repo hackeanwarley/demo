@@ -1,0 +1,70 @@
+/* Custom css for the styles */
+
+.navbar {
+	padding:0 3em;
+}
+
+article {
+	padding: 1em;
+}
+
+section div.row aside {
+	padding: 0;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+section div.row ul {
+	margin-bottom: 0.8em;
+}
+
+#mini-navigation > div{
+	padding: 0;
+}
+
+#mini-navigation .form-inline .form-group,
+#mini-navigation .form-inline .form-group .input-group {
+	width:100%;
+}
+.tab-pane .well {
+	padding:0;
+}
+
+.sidebar-toggle,
+#navbar-toggle,
+#feedback {
+	background: #444444;
+	color:#fff;
+	border-color: #1F1D1D;
+}
+.panel .gradient,
+.panel .gradient > li {
+	background-image: none,-webkit-linear-gradient(top,rgba(0,0,0,.01) 0,rgba(0,0,0,.08) 100%)!important;
+}
+
+.panel-inner {
+	margin: 0.2em;
+	margin-bottom: -1.1em;
+}
+
+.panel .gradient.inner-heading {
+	padding:0.5em 0 0 1em;
+}
+
+.panel .gradient > li {
+	cursor: pointer;
+}
+.panel .gradient a {
+	color:#000;
+}
+#feedback {
+	vertical-align: middle;
+}
+footer {
+	font-size: 0.8em;
+	padding:0.4em;
+}
+
+footer p {
+	margin-left:1em;
+	margin-top:1em;
+}
